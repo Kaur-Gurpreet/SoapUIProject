@@ -1168,7 +1168,15 @@
                     </con:request>
                 </con:config>
             </con:testStep>
-            <con:properties/>
+            <con:testStep type="request" name="Test SOAP Request" id="7300e1d2-7b96-462b-8732-419f9f263241"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ServiceSoapBinding</con:interface><con:operation>login</con:operation><con:request name="Test SOAP Request" id="b9f32bc3-33b1-4de2-90fd-092d82990d0e"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:8083/mockServiceSoapBinding</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sam:login>\r
+         <username>?</username>\r
+         <password>?</password>\r
+      </sam:login>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9f6e0c3c-2786-481e-afe7-5491509c2fa0"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/>
             <con:reportParameters/>
             <con:breakPoints>
                 <con:testStepId>d44d01e1-ca4a-4207-b1a2-6fa4f2e3d7df</con:testStepId>
